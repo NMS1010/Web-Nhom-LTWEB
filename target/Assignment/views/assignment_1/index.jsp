@@ -13,7 +13,7 @@
 <body>
 <jsp:include page="/views/common/nav.jsp" />
 <div class="form_survey">
-    <form action="<%=request.getContextPath()%>/survey" method="post">
+    <form action="<%=request.getContextPath()%>/assignment/1/survey" method="post">
         <img src="<%=request.getContextPath() %>/assets/images/assignment1/murachlogo.jpg" alt="logo" />
         <h1>Survey</h1>
         <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>

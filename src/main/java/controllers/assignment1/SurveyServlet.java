@@ -1,11 +1,12 @@
 package controllers.assignment1;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+@WebServlet(name = "SurveyServlet", value = "/assignment/1/survey")
 public class SurveyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

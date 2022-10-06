@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "EmailListServlet", value = "/emailList")
+@WebServlet(name = "EmailListServlet", value = "/assignment/2/EmailList")
 public class EmailListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,7 +40,7 @@ public class EmailListServlet extends HttpServlet {
             String email = request.getParameter("email");
 
 
-            // store data in User object
+            // store data in User6 object
             User user = new User(firstName, lastName, email);
 
             // validate the parameters

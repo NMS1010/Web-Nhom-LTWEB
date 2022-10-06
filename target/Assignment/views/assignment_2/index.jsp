@@ -18,7 +18,7 @@
         email address below.</p>
     <p><i><%=request.getAttribute("message")%></i></p>
 
-    <form action="<%=request.getContextPath()%>/emailList" method="post">
+    <form action="<%=request.getContextPath()%>/assignment/2/EmailList" method="post">
         <input type="hidden" name="action" value="add">
         <label class="pad_top">Email:</label>
         <input type="email" name="email" value="${user.email}"><br>
@@ -29,7 +29,7 @@
         <label>&nbsp;</label>
         <input type="submit" value="Join Now" class="margin_left">
     </form>
-    <form action="<%=request.getContextPath()%>/test" method="post">
+    <form action="<%=request.getContextPath()%>/assignment/2/test" method="post">
         <input type="hidden" name="action" value="add">
         <input type="submit" value="Test" class="margin_left">
     </form>

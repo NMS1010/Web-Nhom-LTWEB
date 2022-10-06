@@ -23,7 +23,7 @@
 <div class="main">
     <h1>Join our email list</h1>
     <p>To join our email list, enter your name and email address below.</p>
-    <form action="<%=request.getContextPath()%>/emaillist" method="post">
+    <form action="<%=request.getContextPath()%>/assignment/0/EmailJoin" method="post">
         <input type="hidden" name="action" value="add">
         <label>Email: </label>
         <input type="email" name="email" required/> <br />

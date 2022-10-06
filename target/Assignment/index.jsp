@@ -65,7 +65,7 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 1</h2>
                         <p class="mb-4 mt-4">Bài tập 1 - Tuần 4: Email List Murach's Book</p>
-                        <a href="./views/assignment_0/index.jsp" class="btn btn-outline-success">View Assignment</a>
+                        <a href="<%=request.getContextPath()%>/assignment/0" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 2</h2>
                         <p class="mb-4 mt-4">Bài tập 2 - Tuần 5: Crash Course HTML5 và CSS3 </p>
-                        <a href="./views/assignment_1/index.jsp" class="btn btn-outline-success">View Assignment</a>
+                        <a href="<%=request.getContextPath()%>/assignment/1" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>
@@ -85,37 +85,57 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 3</h2>
                         <p class="mb-4 mt-4">Bài tập 3 - Tuần 6: Servlet API</p>
-                        <a href="./views/assignment_2/index.jsp" class="btn btn-outline-success">View Assignment</a>
+                        <a href="<%=request.getContextPath()%>/assignment/2" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-4 mb-5">
-                <div class="card border border-2 border-danger h-100">
+                <div class="card h-100 border border-2 border-success">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 4</h2>
-                        <p class="mb-4 mt-4">Description</p>
-                        <a href="#" class="btn btn-outline-danger">View Assignment</a>
+                        <p class="mb-4 mt-4">Bài tập 4 - Tuần 7 - Chương 6: 6.1 JSP</p>
+                        <a href="<%=request.getContextPath()%>/assignment/3" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-4 mb-5">
-                <div class="card border border-2 border-danger h-100">
+                <div class="card h-100 border border-2 border-success">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 5</h2>
-                        <p class="mb-4 mt-4">Description</p>
-                        <a href="#" class="btn btn-outline-danger">View Assignment</a>
+                        <p class="mb-4 mt-4">Bài tập 5 - Tuần 7 - Chương 6: 6.2 JSP</p>
+                        <a href="<%=request.getContextPath()%>/assignment/4" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-4 mb-5">
-                <div class="card border border-2 border-danger h-100">
+                <div class="card h-100 border border-2 border-success">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 6</h2>
-                        <p class="mb-4 mt-4">Description</p>
-                        <a href="#" class="btn btn-outline-danger">View Assignment</a>
+                        <p class="mb-4 mt-4">Bài tập 6 - Tuần 7 - Chương 8: How to use EL</p>
+                        <a href="<%=request.getContextPath()%>/assignment/5" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 6</h2>
+                        <p class="mb-4 mt-4">Bài tập 7 - Tuần 7 - Chương 9: 9.1 How to use JSTL</p>
+                        <a href="<%=request.getContextPath()%>/assignment/6" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 6</h2>
+                        <p class="mb-4 mt-4">Bài tập 8 - Tuần 7 - Chương 9: 9.2 How to use JSTL</p>
+                        <a href="<%=request.getContextPath()%>/assignment/7" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>

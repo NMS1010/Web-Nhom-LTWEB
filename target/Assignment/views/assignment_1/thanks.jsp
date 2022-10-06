@@ -13,7 +13,7 @@
     </head>
     <body>
 
-    <jsp:include page="/views/common/nav.jsp" ></jsp:include>
+    <jsp:include page="/views/common/nav.jsp" />
     <div class="main">
         <jsp:useBean id="user" class="controllers.assignment1.User" scope="request"/>
         <h1>Thanks for submitting</h1>
@@ -26,12 +26,12 @@
         <span><jsp:getProperty name="user" property="lastName"/></span><br>
         <label>Date Of Birth: </label>
         <span><%=new SimpleDateFormat("yyyy-MM-dd").format(user.getDob())%></span><br>
-        <form action="survey" method="get">
+        <form action="<%=request.getContextPath()%>/assignment/1/survey" method="get">
             <input type="submit" value="Return">
         </form>
     </div>
 
-    <jsp:include page="/views/common/footer.jsp" ></jsp:include>
+    <jsp:include page="/views/common/footer.jsp" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

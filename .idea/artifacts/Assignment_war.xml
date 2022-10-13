@@ -9,6 +9,13 @@
     </properties>
     <root id="archive" name="Assignment.war">
       <element id="artifact" artifact-name="Assignment:war exploded" />
+      <element id="javaee-facet-resources" facet="Web-Nhom-LTWEB/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Web-Nhom-LTWEB" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Web-Nhom-LTWEB/web/Web" />
     </root>
   </artifact>
 </component>

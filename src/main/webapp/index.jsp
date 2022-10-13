@@ -84,7 +84,7 @@
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 3</h2>
-                        <p class="mb-4 mt-4">Bài tập 3 - Tuần 6: Servlet API</p>
+                        <p class="mb-4 mt-4">Bài tập 3 - Tuần 6 - Chương 5: How to develop Servlet - Modify the Servlet for the Email List application</p>
                         <a href="<%=request.getContextPath()%>/assignment/2" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 4</h2>
-                        <p class="mb-4 mt-4">Bài tập 4 - Tuần 7 - Chương 6: 6.1 JSP</p>
+                        <p class="mb-4 mt-4">Bài tập 4 - Tuần 7 - Chương 6: How to develop JSP - 6.1 Modify the JSPs for the Email List application</p>
                         <a href="<%=request.getContextPath()%>/assignment/3" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 5</h2>
-                        <p class="mb-4 mt-4">Bài tập 5 - Tuần 7 - Chương 6: 6.2 JSP</p>
+                        <p class="mb-4 mt-4">Bài tập 5 - Tuần 7 - Chương 6: How to develop JSP - 6.2 Create a new JSP</p>
                         <a href="<%=request.getContextPath()%>/assignment/4" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
                         <h2 class="fs-4 fw-bold">Assignment 6</h2>
-                        <p class="mb-4 mt-4">Bài tập 6 - Tuần 7 - Chương 8: How to use EL</p>
+                        <p class="mb-4 mt-4">Bài tập 6 - Tuần 7 - Chương 8: How to use EL - 8.1 Modify the Email List Application</p>
                         <a href="<%=request.getContextPath()%>/assignment/5" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
@@ -123,8 +123,8 @@
                 <div class="card h-100 border border-2 border-success">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                        <h2 class="fs-4 fw-bold">Assignment 6</h2>
-                        <p class="mb-4 mt-4">Bài tập 7 - Tuần 7 - Chương 9: 9.1 How to use JSTL</p>
+                        <h2 class="fs-4 fw-bold">Assignment 7</h2>
+                        <p class="mb-4 mt-4">Bài tập 7 - Tuần 7 - Chương 9: How to use JSTL - 9.1 Use JSTL in the Download Application</p>
                         <a href="<%=request.getContextPath()%>/assignment/6" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
@@ -133,9 +133,39 @@
                 <div class="card h-100 border border-2 border-success">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                        <h2 class="fs-4 fw-bold">Assignment 6</h2>
-                        <p class="mb-4 mt-4">Bài tập 8 - Tuần 7 - Chương 9: 9.2 How to use JSTL</p>
+                        <h2 class="fs-4 fw-bold">Assignment 8</h2>
+                        <p class="mb-4 mt-4">Bài tập 8 - Tuần 7 - Chương 9: How to use JSTL - 9.2 Use JSTL in the Cart Application</p>
                         <a href="<%=request.getContextPath()%>/assignment/7" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 9</h2>
+                        <p class="mb-4 mt-4">Bài tập 9 - Tuần 8 - Chương 7: How to work with sessions and cookies - 7.1 Use a cookie</p>
+                        <a href="<%=request.getContextPath()%>/assignment/8" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 10</h2>
+                        <p class="mb-4 mt-4">Bài tập 10 - Tuần 8 - Chương 7: How to work with sessions and cookies - 7.2 Use a session attribute</p>
+                        <a href="<%=request.getContextPath()%>/assignment/9" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 11</h2>
+                        <p class="mb-4 mt-4">Bài tập 11 - Tuần 8 - Chương 7: How to work with sessions and cookies - 7.3 Use URL rewriting instead of hidden field</p>
+                        <a href="<%=request.getContextPath()%>/assignment/10" class="btn btn-outline-success">View Assignment</a>
                     </div>
                 </div>
             </div>

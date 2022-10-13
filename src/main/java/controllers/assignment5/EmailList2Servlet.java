@@ -18,7 +18,7 @@ public class EmailList2Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         request.setCharacterEncoding("UTF-8");
-        String path = getServletContext().getRealPath("/WEB-INF/EmailList.txt");
+        String path = getServletContext().getRealPath("/WEB-INF/EmailList5.txt");
         // get current action
         String action = request.getParameter("action");
         if (action == null) {
@@ -42,7 +42,7 @@ public class EmailList2Servlet extends HttpServlet {
             UserIO.addRecord(user, path);
 
             // set User6 object in request object and set URL
-            session.setAttribute("user", user);
+            session.setAttribute("user5", user);
             url = "/views/assignment_5/thanks.jsp";   // the "thanks" page
         }
 
@@ -52,7 +52,7 @@ public class EmailList2Servlet extends HttpServlet {
 
         // create users list and store it in the session
         ArrayList<User> users = UserIO.getUsers(path);
-        session.setAttribute("users", users);
+        session.setAttribute("users5", users);
 
         // forward request and response objects to specified URL
         getServletContext()

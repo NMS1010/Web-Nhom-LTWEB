@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Assignment7 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String path = getServletContext().getRealPath("/WEB-INF/products.txt");
+        String path = getServletContext().getRealPath("/WEB-INF/products7.txt");
         ArrayList<Product> products = new ArrayList<>();
         Product p1 = new Product();
         p1.setCode("8601");

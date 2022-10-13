@@ -32,7 +32,7 @@ public class CartServlet extends HttpServlet {
             String quantityString = request.getParameter("quantity");
 
             HttpSession session = request.getSession();
-            Cart cart = (Cart) session.getAttribute("cart");
+            Cart cart = (Cart) session.getAttribute("cart7");
             if (cart == null) {
                 cart = new Cart();
             }
@@ -47,7 +47,7 @@ public class CartServlet extends HttpServlet {
                 quantity = 0;
             }
 
-            String path = sc.getRealPath("/WEB-INF/products.txt");
+            String path = sc.getRealPath("/WEB-INF/products7.txt");
             Product product = ProductIO.getProduct(productCode, path);
 
             LineItem lineItem = new LineItem();
@@ -63,7 +63,7 @@ public class CartServlet extends HttpServlet {
                 cart.removeItem(lineItem);
             }
 
-            session.setAttribute("cart", cart);
+            session.setAttribute("cart7", cart);
             url = "/cart.jsp";
         }
         else if (action.equals("checkout")) {

@@ -24,10 +24,6 @@
       <th>Audio Format</th>
     </tr>
     <tr>
-      <td width="200"><b>Song title</b></td>
-      <td width="150"><b>Audio Format</b></td>
-    </tr>
-    <tr>
       <td>Filter</td>
       <td><a href="<%=request.getContextPath()%>/musicStore/sound/${productCode}/filter.mp3">MP3</a></td>
     </tr>

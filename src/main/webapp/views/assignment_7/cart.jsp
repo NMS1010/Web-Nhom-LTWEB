@@ -25,7 +25,7 @@
             <th></th>
         </tr>
 
-        <c:forEach var="item" items="${cart.items}">
+        <c:forEach var="item" items="${cart7.items}">
             <tr>
                 <td>
                     <form action="" method="post">

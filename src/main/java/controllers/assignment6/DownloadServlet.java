@@ -55,7 +55,7 @@ public class DownloadServlet extends HttpServlet {
 
         String productCode = request.getParameter("productCode");
         HttpSession session = request.getSession();
-        session.setAttribute("productCode", productCode);
+        session.setAttribute("productCode6", productCode);
         User6 user6 = (User6) session.getAttribute("user6");
 
         String url;
@@ -63,7 +63,7 @@ public class DownloadServlet extends HttpServlet {
         if (user6 == null) {
             Cookie[] cookies = request.getCookies();
             String emailAddress =
-                    CookieUtils.getCookieValue(cookies, "emailCookie");
+                    CookieUtils.getCookieValue(cookies, "emailCookie6");
 
             // if cookie doesn't exist, go to Registration page
             if (emailAddress == null || emailAddress.equals("")) {
@@ -101,7 +101,7 @@ public class DownloadServlet extends HttpServlet {
 
         // write the User6 object to a file
         ServletContext sc = getServletContext();
-        String path = sc.getRealPath("/WEB-INF/EmailList.txt");
+        String path = sc.getRealPath("/WEB-INF/EmailList6.txt");
         UserIO.add(user6, path);
 
         // store the User6 object as a session attribute
@@ -109,19 +109,19 @@ public class DownloadServlet extends HttpServlet {
         session.setAttribute("user6", user6);
 
         // add a cookie that stores the user6's email as a cookie
-        Cookie c1 = new Cookie("emailCookie", email);
+        Cookie c1 = new Cookie("emailCookie6", email);
         c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
         c1.setPath("/");                      // allow entire app to access it
         response.addCookie(c1);
 
         // add a cookie that stores the user6's as a cookie
-        Cookie c2 = new Cookie("firstNameCookie", firstName);
+        Cookie c2 = new Cookie("firstNameCookie6", firstName);
         c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
         c2.setPath("/");                      // allow entire app to access it
         response.addCookie(c2);
 
         // create and return a URL for the appropriate Download page
-        String productCode = (String) session.getAttribute("productCode");
+        String productCode = (String) session.getAttribute("productCode6");
         String url = "/" + productCode + "_download.jsp";
         return url;
     }

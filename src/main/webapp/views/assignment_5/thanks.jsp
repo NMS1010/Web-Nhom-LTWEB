@@ -21,16 +21,16 @@
   <p>Here is the information that you entered:</p>
 
   <label>Email:</label>
-  <span>${user.email}</span><br>
+  <span>${user5.email}</span><br>
   <label>First Name:</label>
-  <span>${user.firstName}</span><br>
+  <span>${user5.firstName}</span><br>
   <label>Last Name:</label>
-  <span>${user.lastName}</span><br>
+  <span>${user5.lastName}</span><br>
 
   <p>This email address was added to our list on ${requestScope.currentDate}</p>
 
-  <p>The first address on our list is ${sessionScope.users[0].email}<br>
-    The second address on our list is ${sessionScope.users[1].email}
+  <p>The first address on our list is ${sessionScope.users5[0].email}<br>
+    The second address on our list is ${sessionScope.users5[1].email}
   </p>
 
   <p>For customer service, contact ${initParam.custServEmail}</p>

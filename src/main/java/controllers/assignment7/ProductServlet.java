@@ -12,7 +12,7 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
 
-        String path = getServletContext().getRealPath("/WEB-INF/products.txt");
+        String path = getServletContext().getRealPath("/WEB-INF/products7.txt");
         ArrayList<Product> products = ProductIO.getProducts(path);
         session.setAttribute("products", products);
 

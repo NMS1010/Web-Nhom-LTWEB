@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Web-Nhom-LTWEB:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Web_Nhom_LTWEB_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Web-Nhom-LTWEB" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.webjars:bootstrap:5.2.0" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Web-Nhom-LTWEB/web/Web" />
+    </root>
+  </artifact>
+</component>

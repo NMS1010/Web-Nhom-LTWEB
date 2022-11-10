@@ -9,7 +9,7 @@ public class UserDB {
         PreparedStatement ps = null;
 
         String query
-                = "CREATE TABLE if not exists User (Email nvarchar(255), FirstName nvarchar(255), LastName nvarchar(255)); ";
+                = "CREATE TABLE if not exists UserTest (Email nvarchar(255), FirstName nvarchar(255), LastName nvarchar(255)); ";
         try {
             ps = connection.prepareStatement(query);
             return ps.executeUpdate();
@@ -28,7 +28,7 @@ public class UserDB {
         PreparedStatement ps = null;
         createTable();
         String query
-                = "INSERT INTO User (Email, FirstName, LastName) "
+                = "INSERT INTO UserTest (Email, FirstName, LastName) "
                 + "VALUES (?, ?, ?)";
         try {
             ps = connection.prepareStatement(query);
@@ -50,7 +50,7 @@ public class UserDB {
         Connection connection = pool.getConnection();
         PreparedStatement ps = null;
 
-        String query = "UPDATE User SET "
+        String query = "UPDATE UserTest SET "
                 + "FirstName = ?, "
                 + "LastName = ? "
                 + "WHERE Email = ?";
@@ -75,7 +75,7 @@ public class UserDB {
         Connection connection = pool.getConnection();
         PreparedStatement ps = null;
 
-        String query = "DELETE FROM User "
+        String query = "DELETE FROM UserTest "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -97,7 +97,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT Email FROM User "
+        String query = "SELECT Email FROM UserTest "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -120,7 +120,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT * FROM User "
+        String query = "SELECT * FROM UserTest "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -150,7 +150,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT * FROM User";
+        String query = "SELECT * FROM UserTest";
         try {
             ps = connection.prepareStatement(query);
             rs = ps.executeQuery();

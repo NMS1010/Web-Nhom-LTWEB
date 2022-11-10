@@ -19,7 +19,7 @@
     <input type="hidden" name="action" value="update_user">
     <label class="pad_top">Email:</label>
     <input type="email" name="email" value="${user.email}"
-           disabled><br>
+           readonly><br>
     <label class="pad_top">First Name:</label>
     <input type="text" name="firstName" value="${user.firstName}"
            required><br>

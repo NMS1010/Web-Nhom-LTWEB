@@ -8,23 +8,29 @@
   <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="<%=request.getContextPath()%>/assets/styles/styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment12/main.css" type="text/css"/>
+  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment13/main.css" type="text/css"/>
 </head>
 <body>
 <jsp:include page="/views/common/nav.jsp" />
 <div class="main">
-  <h1>Create User</h1>
-  <h2>${message}</h2>
-  <form action="<%=request.getContextPath()%>/assignment/12/userAdmin" method="post">
-    <input type="hidden" name="action" value="create_user">
-    <label class="pad_top">Email:</label>
-    <input type="email" name="email" required><br>
-    <label class="pad_top">First Name:</label>
-    <input type="text" name="firstName" required><br>
-    <label class="pad_top">Last Name:</label>
-    <input type="text" name="lastName" required><br>
-    <label>&nbsp;</label>
-    <input type="submit" value="Create" class="margin_left">
+  <h1>Thanks for joining our email list</h1>
+
+  <p>Here is the information that you entered:</p>
+
+  <label>Email:</label>
+  <span>${user.email}</span><br>
+  <label>First Name:</label>
+  <span>${user.firstName}</span><br>
+  <label>Last Name:</label>
+  <span>${user.lastName}</span><br>
+
+  <p>To enter another email address, click on the Back
+    button in your browser or the Return button shown
+    below.</p>
+
+  <form action="" method="post">
+    <input type="hidden" name="action" value="join">
+    <input type="submit" value="Return">
   </form>
 </div>
 <jsp:include page= "/views/common/footer.jsp" />

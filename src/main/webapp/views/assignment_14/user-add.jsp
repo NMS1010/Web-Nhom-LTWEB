@@ -8,14 +8,13 @@
   <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="<%=request.getContextPath()%>/assets/styles/styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment12/main.css" type="text/css"/>
+  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment14/main.css" type="text/css"/>
 </head>
 <body>
 <jsp:include page="/views/common/nav.jsp" />
 <div class="main">
   <h1>Create User</h1>
-  <h2>${message}</h2>
-  <form action="<%=request.getContextPath()%>/assignment/12/userAdmin" method="post">
+  <form action="<%=request.getContextPath()%>/assignment/14/userAdmin" method="post">
     <input type="hidden" name="action" value="create_user">
     <label class="pad_top">Email:</label>
     <input type="email" name="email" required><br>

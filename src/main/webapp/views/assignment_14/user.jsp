@@ -8,23 +8,26 @@
   <link rel="icon" type="image/x-icon" href="<%=request.getContextPath()%>/assets/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="<%=request.getContextPath()%>/assets/styles/styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment12/main.css" type="text/css"/>
+  <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/styles/assignment14/main.css" type="text/css"/>
 </head>
 <body>
 <jsp:include page="/views/common/nav.jsp" />
 <div class="main">
-  <h1>Create User</h1>
-  <h2>${message}</h2>
-  <form action="<%=request.getContextPath()%>/assignment/12/userAdmin" method="post">
-    <input type="hidden" name="action" value="create_user">
+  <h1>Update User</h1>
+  <p>NOTE: You can't update the email address.</p>
+  <form action="<%=request.getContextPath()%>/assignment/14/userAdmin" method="post">
+    <input type="hidden" name="action" value="update_user">
     <label class="pad_top">Email:</label>
-    <input type="email" name="email" required><br>
+    <input type="email" name="email" value="${user.email}"
+           readonly><br>
     <label class="pad_top">First Name:</label>
-    <input type="text" name="firstName" required><br>
+    <input type="text" name="firstName" value="${user.firstName}"
+           required><br>
     <label class="pad_top">Last Name:</label>
-    <input type="text" name="lastName" required><br>
+    <input type="text" name="lastName" value="${user.lastName}"
+           required><br>
     <label>&nbsp;</label>
-    <input type="submit" value="Create" class="margin_left">
+    <input type="submit" value="Update" class="margin_left">
   </form>
 </div>
 <jsp:include page= "/views/common/footer.jsp" />

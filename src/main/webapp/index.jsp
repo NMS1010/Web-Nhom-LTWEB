@@ -189,6 +189,26 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 14</h2>
+                        <p class="mb-4 mt-4">Bài tập 14 - Tuần 11 - Chương 13: How to use JPA to work with a database - 13.1 Test and modify the Email List application</p>
+                        <a href="<%=request.getContextPath()%>/assignment/13" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4 mb-5">
+                <div class="card h-100 border border-2 border-success">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
+                        <h2 class="fs-4 fw-bold">Assignment 15</h2>
+                        <p class="mb-4 mt-4">Bài tập 15 - Tuần 11 - Chương 13: How to use JPA to work with a database - 13.2 Create a User Admin application</p>
+                        <a href="<%=request.getContextPath()%>/assignment/14" class="btn btn-outline-success">View Assignment</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xxl-8 mb-5 mt-5">
